@@ -4,7 +4,6 @@ import 'package:nanam/colors.dart';
 import 'package:nanam/dashboard.dart';
 import 'package:nanam/splash_screen.dart';
 
-
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: generateMaterialColor(Pallette.primary),
         fontFamily: 'Poppins',
       ),
-      home: Dashboard('Nadia'),
+      home: SplashScreen(),
     );
   }
 }

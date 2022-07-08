@@ -9,6 +9,7 @@ class Plant{
   late String light;
   late String startPrice;
   late String imageAsset;
+  late String imageDetail;
 
   Plant({
     required this.name,
@@ -18,7 +19,8 @@ class Plant{
     required this.rangeTemp,
     required this.light,
     required this.startPrice,
-    required this.imageAsset
+    required this.imageAsset,
+    required this.imageDetail,
   });
 }
 
@@ -32,6 +34,7 @@ var dataPlant = [
     light: 'Siang',
     startPrice: 'Rp.30000',
     imageAsset: 'images/sirihgading.png',
+    imageDetail: 'images/detail_sirihgading.png'
   ),
   Plant(
     name: 'Keladi Hias',
@@ -42,6 +45,7 @@ var dataPlant = [
     light: 'Siang',
     startPrice: 'Rp.30000',
     imageAsset: 'images/keladihias.png',
+    imageDetail: 'images/detail_sirihgading.png'
   ),
   Plant(
     name: 'Lidah Mertua',
@@ -52,6 +56,7 @@ var dataPlant = [
     light: 'Siang',
     startPrice: 'Rp.30000',
     imageAsset: 'images/lidahmertua.png',
+    imageDetail: 'images/detail_sirihgading.png'
   ),
   Plant(
     name: 'Suplir',
@@ -62,6 +67,7 @@ var dataPlant = [
     light: 'Siang',
     startPrice: 'Rp.30000',
     imageAsset: 'images/suplir.png',
+    imageDetail: 'images/detail_sirihgading.png'
   ),
   Plant(
     name: 'Kuping Gajah',
@@ -72,6 +78,7 @@ var dataPlant = [
     light: 'Siang',
     startPrice: 'Rp.30000',
     imageAsset: 'images/kupinggajah.png',
+    imageDetail: 'images/detail_sirihgading.png'
   ),
   Plant(
     name: 'Gelombang Cinta',
@@ -81,7 +88,8 @@ var dataPlant = [
     rangeTemp: '25-35',
     light: 'Siang',
     startPrice: 'Rp.30000',
-    imageAsset: 'images/gelombangcinta.png', 
+    imageAsset: 'images/gelombangcinta.png',
+    imageDetail: 'images/detail_sirihgading.png' 
   ),
   Plant(
     name: 'Tanduk Rusa',
@@ -92,6 +100,7 @@ var dataPlant = [
     light: 'Siang',
     startPrice: 'Rp.30000',
     imageAsset: 'images/tandukrusa.png', 
+    imageDetail: 'images/detail_sirihgading.png'
   ),
   Plant(
     name: 'Pohon dolar',
@@ -102,6 +111,7 @@ var dataPlant = [
     light: 'Siang',
     startPrice: 'Rp.30000',
     imageAsset: 'images/pohondolar.png', 
+    imageDetail: 'images/detail_sirihgading.png'
   ),
   Plant(
     name: 'Pucuk Merah',
@@ -112,6 +122,7 @@ var dataPlant = [
     light: 'Siang',
     startPrice: 'Rp.30000',
     imageAsset: 'images/pucukmerah.png', 
+    imageDetail: 'images/detail_sirihgading.png'
   ),
   Plant(
     name: 'Montsera',
@@ -121,6 +132,7 @@ var dataPlant = [
     rangeTemp: '25-35',
     light: 'Siang',
     startPrice: 'Rp.30000',
-    imageAsset: 'images/montsera.png', 
+    imageAsset: 'images/montsera.png',
+    imageDetail: 'images/detail_sirihgading.png' 
   )
 ];
