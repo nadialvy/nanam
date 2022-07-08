@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:nanam/colors.dart';
+import 'package:nanam/dashboard.dart';
 import 'package:nanam/splash_screen.dart';
+
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -20,7 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: generateMaterialColor(Pallette.primary),
         fontFamily: 'Poppins',
       ),
-      home: const SplashScreen(),
+      home: Dashboard('Nadia'),
     );
   }
 }

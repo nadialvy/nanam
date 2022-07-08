@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nanam/colors.dart';
+import 'package:nanam/dashboard.dart';
 import 'package:nanam/widgets.dart';
 
 class Home extends StatelessWidget{
@@ -143,7 +144,11 @@ class _LoginUserState extends State<LoginUser> {
             minHeight: 50,
           ),
           child: ElevatedButton(
-            onPressed: (){},
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context){
+                return Dashboard(_name);
+              }));
+            },
             child: const Text(
               'Sign In',
               style: TextStyle(
