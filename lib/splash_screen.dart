@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:drop_shadow_image/drop_shadow_image.dart';
-import 'package:nanam/home.dart';
+import 'package:nanam/login.dart';
 
 
 class SplashScreen extends StatefulWidget{

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:nanam/colors.dart';
 import 'package:nanam/splash_screen.dart';
 
 void main() {
@@ -16,10 +17,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Nanam',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: generateMaterialColor(Pallette.primary),
         fontFamily: 'Poppins',
       ),
       home: const SplashScreen(),
     );
   }
+}
+
+class Pallette {
+  static const Color primary = Color.fromARGB(255, 40, 54, 24);
 }

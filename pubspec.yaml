@@ -38,6 +38,8 @@ dependencies:
   drop_shadow_image: ^0.9.1
   flutter_native_splash: ^2.2.4
   gradients: ^0.1.1+1
+  font_awesome_flutter: ^10.1.0
+  fluttertoast: ^8.0.9
 
 dev_dependencies:
   flutter_test:
@@ -72,10 +74,11 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Schyler
+    - family: Poppins
       fonts:
-      - asset: fonts/Poppins/Poppins-Regular.ttf
-      - asset: fonts/Poppins/Poppins-Bold.ttf
+      - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+      - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+        weight: 700
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
