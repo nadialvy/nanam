@@ -38,7 +38,7 @@ var dataPlant = [
   ),
   Plant(
     name: 'Keladi Hias',
-    desc: 'Keladi hias termasuk macam-macam tanaman hias yang termasuk dalam jenis Caladium. Saat ini keladi hias banyak dicari para pencinta tanaman hias. Jenis yang paling banyak dicari seperti Caladium Gingerland, Caladium Carolyn Whorton, Caladium Moonlight, Caladium White Christmas, Caladium Freida Hemple, dan masih banyak lagi.',
+    desc: 'Keladi hias termasuk macam-macam tanaman hias yang termasuk dalam jenis Caladium. Saat ini keladi hias banyak dicari para pencinta tanaman hias. Jenis yang paling banyak dicari seperti Caladium Gingerland, Caladium Carolyn Whorton, Caladium Moonlight, Caladium White Christmas, Caladium Freida Hemple, dan masih banyak lagi. Keladi hias termasuk macam-macam tanaman hias yang termasuk dalam jenis Caladium. Saat ini keladi hias banyak dicari para pencinta tanaman hias. Jenis yang paling banyak dicari seperti Caladium Gingerland, Caladium Carolyn Whorton, Caladium Moonlight, Caladium White Christmas, Caladium Freida Hemple, dan masih banyak lagi.  Keladi hias termasuk macam-macam tanaman hias yang termasuk dalam jenis Caladium. Saat ini keladi hias banyak dicari para pencinta tanaman hias. Jenis yang paling banyak dicari seperti Caladium Gingerland, Caladium Carolyn Whorton, Caladium Moonlight, Caladium White Christmas, Caladium Freida Hemple, dan masih banyak lagi.',
     soilType: 'Tanah Gembur',
     water: '0.7L',
     rangeTemp: '27',
