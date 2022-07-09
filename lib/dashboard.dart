@@ -58,20 +58,19 @@ class Dashboard extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Expanded(
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(3),
-                              child: Image.asset(
-                                plant.imageAsset,
-                              
-                              ),
+                            child: Image.asset(
+                              plant.imageAsset,
                             ),
                           ),
-                          Text(
-                            textAlign: TextAlign.center,
-                            plant.name,
-                            style: const TextStyle(
-                              fontSize: 14,
-                              fontWeight: FontWeight.w400
+                          Container(
+                            padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+                            child: Text(
+                              textAlign: TextAlign.center,
+                              plant.name,
+                              style: const TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600
+                              ),
                             ),
                           ),
                         ],
