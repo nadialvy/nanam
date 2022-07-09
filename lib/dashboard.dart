@@ -3,10 +3,32 @@ import 'package:anim_search_bar/anim_search_bar.dart';
 import 'package:nanam/detail_screen.dart';
 import 'package:nanam/model/data_plant.dart';
 
+class MainScreen extends StatelessWidget{
+  final String name;
+  const MainScreen(this.name);
+
+  @override
+  Widget build(BuildContext context){
+    return Scaffold(
+      body: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints constraints){
+          if (constraints.maxWidth <= 600){
+            return Dashboard(2, name);
+          }else if(constraints.maxWidth <= 900){
+            return Dashboard(4, name);
+          } else {
+            return Dashboard(6, name);
+          }
+        },
+      )
+    );
+  }
+}
 
 class Dashboard extends StatefulWidget {
+  final int gridCount;
   final String name;
-  Dashboard(this.name);
+  const Dashboard(this.gridCount, this.name);
 
   @override
   State<Dashboard> createState() => _DashboardState();
@@ -14,7 +36,6 @@ class Dashboard extends StatefulWidget {
 
 class _DashboardState extends State<Dashboard> {
   final controller = TextEditingController();
-
   List<Plant> plants = dataPlant;
 
   @override
@@ -73,7 +94,7 @@ class _DashboardState extends State<Dashboard> {
             const SizedBox(height: 30,),
             Expanded(
               child: GridView.count(
-                crossAxisCount: 2,
+                crossAxisCount: widget.gridCount,
                 children: dataPlant.map((plant){
                   return InkWell(
                     onTap: () {

@@ -148,7 +148,7 @@ class _LoginUserState extends State<LoginUser> {
           child: ElevatedButton(
             onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context){
-                return Dashboard(_name);
+                return MainScreen(_name);
               }));
             },
             child: const Text(
