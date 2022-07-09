@@ -11,6 +11,7 @@ class Home extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       backgroundColor: const Color.fromARGB(255, 247, 243, 218),
       body: Padding(
         padding: const EdgeInsets.all(20),
@@ -18,23 +19,25 @@ class Home extends StatelessWidget{
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            //logo + text
-            Column(
-              children: [
-                Image.asset('images/logoNanam.png', height: 80,),
-                const SizedBox(height: 15),
-                const Text(
-                  'Hello Again!',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
+            Padding(
+              padding: const EdgeInsets.only(top: 40),
+              child: Column(
+                children: [
+                  Image.asset('images/logoNanam.png', height: 80,),
+                  const SizedBox(height: 15),
+                  const Text(
+                    'Hello Again!',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
                   ),
-                ),
-                const Text(
-                  'Et commodo voluptate reprehenderit aliqua aliquip excepteur laborum qui aliquip.',
-                  textAlign: TextAlign.center,
-                ),
-              ],
+                  const Text(
+                    'Et commodo voluptate reprehenderit aliqua aliquip excepteur laborum qui aliquip.',
+                    textAlign: TextAlign.center,
+                  ),
+                ],
+              ),
             ),
             //login
             const LoginUser(),
@@ -62,7 +65,6 @@ class Home extends StatelessWidget{
                     ),
                   ],
                 ),
-                const SizedBox(height: 20,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
@@ -137,7 +139,7 @@ class _LoginUserState extends State<LoginUser> {
             color: Color.fromARGB(255, 40, 54, 24),
           ),
         ),
-        const SizedBox(height: 40),
+        const SizedBox(height: 20),
         ConstrainedBox(
           constraints: const BoxConstraints(
             minWidth: double.infinity,

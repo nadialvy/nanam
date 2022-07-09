@@ -114,7 +114,6 @@ class _DashboardState extends State<Dashboard> {
     );
   }
 
-  //cannt use bcs idk how to use it
   void searchPlant(String query){
     final sugesstions = plants.where((plant) {
       final plantName = plant.name.toLowerCase();

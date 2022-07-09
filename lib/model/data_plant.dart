@@ -30,8 +30,8 @@ var dataPlant = [
     desc: 'Sirih gading menjadi salah satu macam-macam tanaman hias daun yang sedang populer beberapa waktu ini. Sirih gading merupakan tanaman merambat semi-epifit dengan warna hijau yang segar. Sirih gading termasuk tanaman yang mudah dirawat dan bisa ditanam dengan media air.',
     soilType: 'Tanah',
     water: '1L',
-    rangeTemp: '25-35',
-    light: 'Matahari',
+    rangeTemp: '29',
+    light: 'Sun Light',
     startPrice: 'Rp.30000',
     imageAsset: 'images/sirihgading.png',
     imageDetail: 'images/detail_sirgad.jpg'
@@ -75,7 +75,7 @@ var dataPlant = [
     soilType: 'Tanah Gembur',
     water: '3.2L',
     rangeTemp: '29',
-    light: 'Matahari',
+    light: 'Sun Light',
     startPrice: 'Rp.30000',
     imageAsset: 'images/kupinggajah.png',
     imageDetail: 'images/detail_kupinggajah.jpg'
@@ -119,7 +119,7 @@ var dataPlant = [
     soilType: 'Tanah Gembur',
     water: '2.1L',
     rangeTemp: '31',
-    light: 'Matahari',
+    light: 'Sun Light',
     startPrice: 'Rp.30000',
     imageAsset: 'images/pucukmerah.png', 
     imageDetail: 'images/detail_9.jpg'

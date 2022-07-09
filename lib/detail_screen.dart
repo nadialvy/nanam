@@ -71,55 +71,92 @@ class DetailScreen extends StatelessWidget{
                     ],
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Card(
-                      color: Color.fromARGB(255, 221, 162, 94),
-                      child: Padding(
-                        padding: EdgeInsets.fromLTRB(widthDevice * 0.1, 10, widthDevice * 0.1, 10),
-                        child: Column(
-                          children: [
-                            const Icon(Icons.sunny),
-                            const SizedBox(height: 8,),
-                            Text(
-                              plant.light,
-                            )
-                          ],
+                
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Card(
+                          color: const Color.fromARGB(255, 221, 162, 94),
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(widthDevice * 0.1, 10, widthDevice * 0.1, 10),
+                            child: Column(
+                              children: [
+                                const Icon(Icons.sunny),
+                                const SizedBox(height: 8,),
+                                Text(
+                                  plant.light,
+                                )
+                              ],
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                    Card(
-                      color: Color.fromARGB(255, 221, 162, 94),
-                      child: Padding(
-                        padding: EdgeInsets.fromLTRB(widthDevice * 0.1, 10, widthDevice * 0.1, 10),
-                        child: Column(
-                          children: [
-                            const Icon(Icons.thermostat),
-                            const SizedBox(height: 8,),
-                            Text(
-                              plant.rangeTemp
-                            )
-                          ],
+                      Expanded(
+                        flex: 1,
+                        child: Card(
+                          color: const Color.fromARGB(255, 221, 162, 94),
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(widthDevice * 0.1, 10, widthDevice * 0.1, 10),
+                            child: Column(
+                              children: [
+                                const Icon(Icons.monetization_on),
+                                const SizedBox(height: 8,),
+                                Text(
+                                  plant.startPrice,
+                                )
+                              ],
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                    Card(
-                      color: Color.fromARGB(255, 221, 162, 94),
-                      child: Padding(
-                        padding: EdgeInsets.fromLTRB(widthDevice * 0.1, 10, widthDevice * 0.1, 10),
-                        child: Column(
-                          children: [
-                            const Icon(Icons.water_drop),
-                            const SizedBox(height: 8,),
-                            Text(
-                              plant.water
-                            )
-                          ],
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Card(
+                          color: const Color.fromARGB(255, 221, 162, 94),
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(widthDevice * 0.1, 10, widthDevice * 0.1, 10),
+                            child: Column(
+                              children: [
+                                const Icon(Icons.thermostat),
+                                const SizedBox(height: 8,),
+                                Text(
+                                  plant.rangeTemp
+                                )
+                              ],
+                            ),
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                      Expanded(
+                        flex: 1,
+                        child: Card(
+                          color: const Color.fromARGB(255, 221, 162, 94),
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(widthDevice * 0.1, 10, widthDevice * 0.1, 10),
+                            child: Column(
+                              children: [
+                                const Icon(Icons.water_drop),
+                                const SizedBox(height: 8,),
+                                Text(
+                                  plant.water
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
                 const SizedBox(height: 20,)
               ],

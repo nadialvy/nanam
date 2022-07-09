@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: generateMaterialColor(Pallette.primary),
         fontFamily: 'Poppins',
       ),
-      home: Dashboard('nadia'),
+      home: SplashScreen(),
     );
   }
 }
