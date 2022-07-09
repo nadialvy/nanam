@@ -112,13 +112,17 @@ class DetailScreenWeb extends StatelessWidget {
                                     flex: 1,
                                     child: Card(
                                       color: const Color.fromARGB(255, 221, 162, 94),
-                                      child: Column(
-                                        children: [
-                                          const Icon(Icons.sunny),
-                                          Text(
-                                            plant.light
-                                          ),
-                                        ],
+                                      child: Padding(
+                                      padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
+                                        child: Column(
+                                          children: [
+                                            const Icon(Icons.height),
+                                            const SizedBox(height: 8),
+                                            Text(
+                                              plant.height
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -126,13 +130,17 @@ class DetailScreenWeb extends StatelessWidget {
                                     flex: 1,
                                     child: Card(
                                       color: const Color.fromARGB(255, 221, 162, 94),
-                                      child: Column(
-                                        children: [
-                                          const Icon(Icons.monetization_on),
-                                          Text(
-                                            plant.startPrice
-                                          ),
-                                        ],
+                                      child: Padding(
+                                      padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
+                                        child: Column(
+                                          children: [
+                                            const Icon(Icons.monetization_on),
+                                            const SizedBox(height: 8),
+                                            Text(
+                                              plant.startPrice
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -144,13 +152,17 @@ class DetailScreenWeb extends StatelessWidget {
                                     flex: 1,
                                     child: Card(
                                       color: const Color.fromARGB(255, 221, 162, 94),
-                                      child: Column(
-                                        children: [
-                                          const Icon(Icons.thermostat),
-                                          Text(
-                                            plant.rangeTemp
-                                          ),
-                                        ],
+                                      child: Padding(
+                                        padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
+                                        child: Column(
+                                          children: [
+                                            const Icon(Icons.thermostat),
+                                            const SizedBox(height: 8),
+                                            Text(
+                                              plant.rangeTemp
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -158,13 +170,17 @@ class DetailScreenWeb extends StatelessWidget {
                                     flex: 1,
                                     child: Card(
                                       color: const Color.fromARGB(255, 221, 162, 94),
-                                      child: Column(
-                                        children: [
-                                          const Icon(Icons.water_drop),
-                                          Text(
-                                            plant.water
-                                          ),
-                                        ],
+                                      child: Padding(
+                                      padding: const EdgeInsets.fromLTRB(0, 5, 0, 5),
+                                        child: Column(
+                                          children: [
+                                            const Icon(Icons.water_drop),
+                                            const SizedBox(height: 8),
+                                            Text(
+                                              plant.water
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -286,10 +302,10 @@ class DetailScreenMobile extends StatelessWidget{
                             padding: EdgeInsets.fromLTRB(widthDevice * 0.1, 10, widthDevice * 0.1, 10),
                             child: Column(
                               children: [
-                                const Icon(Icons.sunny),
+                                const Icon(Icons.height),
                                 const SizedBox(height: 8,),
                                 Text(
-                                  plant.light,
+                                  plant.height,
                                 )
                               ],
                             ),
@@ -330,7 +346,7 @@ class DetailScreenMobile extends StatelessWidget{
                             child: Column(
                               children: [
                                 const Icon(Icons.thermostat),
-                                const SizedBox(height: 8,),
+                                const SizedBox(height: 8),
                                 Text(
                                   plant.rangeTemp
                                 )

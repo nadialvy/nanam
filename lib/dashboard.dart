@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:anim_search_bar/anim_search_bar.dart';
 import 'package:nanam/detail_screen.dart';
 import 'package:nanam/model/data_plant.dart';
+import 'package:flutter/scheduler.dart';
+
+import 'package:flutter/animation.dart';
+
 
 class MainScreen extends StatelessWidget{
   final String name;

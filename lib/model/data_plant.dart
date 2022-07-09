@@ -6,7 +6,7 @@ class Plant{
   late String soilType;
   late String water;
   late String rangeTemp;
-  late String light;
+  late String height;
   late String startPrice;
   late String imageAsset;
   late String imageDetail;
@@ -17,7 +17,7 @@ class Plant{
     required this.soilType,
     required this.water,
     required this.rangeTemp,
-    required this.light,
+    required this.height,
     required this.startPrice,
     required this.imageAsset,
     required this.imageDetail,
@@ -31,8 +31,8 @@ var dataPlant = [
     soilType: 'Tanah',
     water: '1L',
     rangeTemp: '29',
-    light: 'Sun Light',
-    startPrice: 'Rp.30000',
+    height: '7cm - 5m',
+    startPrice: 'Rp300000',
     imageAsset: 'images/sirihgading.png',
     imageDetail: 'images/detail_sirgad.jpg'
   ),
@@ -42,8 +42,8 @@ var dataPlant = [
     soilType: 'Tanah Gembur',
     water: '0.7L',
     rangeTemp: '27',
-    light: 'Neon',
-    startPrice: 'Rp.30000',
+    height: '3m',
+    startPrice: 'Rp600000',
     imageAsset: 'images/keladihias.png',
     imageDetail: 'images/detail_keladihias.jpg'
   ),
@@ -53,8 +53,8 @@ var dataPlant = [
     soilType: 'Tanah',
     water: '2L',
     rangeTemp: '30',
-    light: 'HID',
-    startPrice: 'Rp.30000',
+    height: '1m - 2m',
+    startPrice: 'Rp830000',
     imageAsset: 'images/lidahmertua.png',
     imageDetail: 'images/detail_lidahmertua.jpg'
   ),
@@ -64,8 +64,8 @@ var dataPlant = [
     soilType: 'Tanah',
     water: '1.9L',
     rangeTemp: '26',
-    light: 'LED',
-    startPrice: 'Rp.30000',
+    height: '30cm',
+    startPrice: 'Rp120000',
     imageAsset: 'images/suplir.png',
     imageDetail: 'images/detail_suplir.jpg'
   ),
@@ -75,8 +75,8 @@ var dataPlant = [
     soilType: 'Tanah Gembur',
     water: '3.2L',
     rangeTemp: '29',
-    light: 'Sun Light',
-    startPrice: 'Rp.30000',
+    height: '2.3m',
+    startPrice: 'Rp900000',
     imageAsset: 'images/kupinggajah.png',
     imageDetail: 'images/detail_kupinggajah.jpg'
   ),
@@ -86,8 +86,8 @@ var dataPlant = [
     soilType: 'Tanah Gembur',
     water: '1.3L',
     rangeTemp: '27',
-    light: 'Neon',
-    startPrice: 'Rp.30000',
+    height: '1m - 4m',
+    startPrice: 'Rp200000',
     imageAsset: 'images/gelombangcinta.png',
     imageDetail: 'images/detail_6.jpg' 
   ),
@@ -97,8 +97,8 @@ var dataPlant = [
     soilType: 'Tanah Gembur',
     water: '1L',
     rangeTemp: '32',
-    light: 'HID',
-    startPrice: 'Rp.30000',
+    height: '50cm',
+    startPrice: 'Rp1000000',
     imageAsset: 'images/tandukrusa.png', 
     imageDetail: 'images/detail_7.jpg'
   ),
@@ -108,8 +108,8 @@ var dataPlant = [
     soilType: 'Tanah Gembur',
     water: '1L',
     rangeTemp: '30',
-    light: 'LED',
-    startPrice: 'Rp.30000',
+    height: '20cm',
+    startPrice: 'Rp300000',
     imageAsset: 'images/pohondolar.png', 
     imageDetail: 'images/detail_8.jpg'
   ),
@@ -119,8 +119,8 @@ var dataPlant = [
     soilType: 'Tanah Gembur',
     water: '2.1L',
     rangeTemp: '31',
-    light: 'Sun Light',
-    startPrice: 'Rp.30000',
+    height: '1m',
+    startPrice: 'Rp700000',
     imageAsset: 'images/pucukmerah.png', 
     imageDetail: 'images/detail_9.jpg'
   ),
@@ -130,8 +130,8 @@ var dataPlant = [
     soilType: 'Tanah Gembur',
     water: '0.4L',
     rangeTemp: '26',
-    light: 'Neon',
-    startPrice: 'Rp.30000',
+    height: '3m - 5m',
+    startPrice: 'Rp5000000',
     imageAsset: 'images/montsera.png',
     imageDetail: 'images/detail_10.jpg' 
   )
