@@ -4,9 +4,18 @@ import 'package:nanam/detail_screen.dart';
 import 'package:nanam/model/data_plant.dart';
 
 
-class Dashboard extends StatelessWidget {
+class Dashboard extends StatefulWidget {
   final String name;
-  const Dashboard(this.name);
+  Dashboard(this.name);
+
+  @override
+  State<Dashboard> createState() => _DashboardState();
+}
+
+class _DashboardState extends State<Dashboard> {
+  final controller = TextEditingController();
+
+  List<Plant> plants = dataPlant;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +35,7 @@ class Dashboard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Hi $name!',
+                      'Hi ${widget.name}!',
                       style: const TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w600,
@@ -48,7 +57,20 @@ class Dashboard extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 30),
+            //search bar
+            TextField(
+              controller: controller,
+              decoration: InputDecoration(
+                hintText: 'Search...',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  borderSide: const BorderSide(color: Color.fromARGB(255, 40, 54, 24))
+                ),
+              ),
+              onChanged: searchPlant,
+            ),
+            const SizedBox(height: 30,),
             Expanded(
               child: GridView.count(
                 crossAxisCount: 2,
@@ -90,6 +112,18 @@ class Dashboard extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  //cannt use bcs idk how to use it
+  void searchPlant(String query){
+    final sugesstions = plants.where((plant) {
+      final plantName = plant.name.toLowerCase();
+      final input = query.toLowerCase();
+
+      return plantName.contains(input);
+    }).toList();
+
+    setState(() => plants = sugesstions);
   }
 }
 
