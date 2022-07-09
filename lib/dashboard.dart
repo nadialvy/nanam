@@ -19,28 +19,34 @@ class Dashboard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children:[ 
             Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  'Hi $name!',
-                  style: const TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w600,
-                  ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Hi $name!',
+                      style: const TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    const Text(
+                      'Good Morning!',
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: Color.fromARGB(255, 107, 105, 105),
+                        fontWeight: FontWeight.w300
+                      ),
+                    ),
+                  ],
                 ),
                 Image.asset(
                   'images/profpict.png',
                   height: 50,
                 ),
-              ]
-            ),
-            const Text(
-              'Good Morning!',
-              style: TextStyle(
-                fontSize: 14,
-                color: Color.fromARGB(255, 107, 105, 105),
-                fontWeight: FontWeight.w300
-              ),
+              ],
             ),
             const SizedBox(height: 15),
             Expanded(
